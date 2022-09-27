@@ -29,6 +29,34 @@ gem "jbuilder"
 
 gem 'ffi', '~> 1.15', '>= 1.15.5'
 
+gem 'minitest-reporters', '~> 1.5'
+
+gem 'minitest', '~> 5.16', '>= 5.16.3'
+
+gem 'mini_backtrace', '~> 0.1.3'
+
+gem 'guard', '~> 2.18'
+
+gem 'sass-rails', '~> 6.0'
+
+gem 'uglifier', '~> 4.2'
+
+gem 'coffee-rails', '~> 5.0'
+
+gem 'jquery-rails', '~> 4.5'
+
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
+
+gem 'sdoc', '~> 2.4'
+
+gem 'byebug', '~> 11.1', '>= 11.1.3'
+
+gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
+
+gem 'pg', '~> 1.4', '>= 1.4.3'
+
+gem 'rails_12factor', '~> 0.0.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -62,8 +90,7 @@ group :development do
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "spring"
 end
 
 group :test do
