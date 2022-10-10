@@ -57,6 +57,10 @@ gem 'pg', '~> 1.4', '>= 1.4.3'
 
 gem 'rails_12factor', '~> 0.0.3'
 
+gem 'bootstrap-sass'
+
+gem 'rails-controller-testing'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
