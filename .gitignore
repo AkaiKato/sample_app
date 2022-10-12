@@ -36,3 +36,4 @@
 
 # Игнорировать файлы Spring
 /spring/*.pid
+node_modules
