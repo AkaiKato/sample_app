@@ -63,6 +63,12 @@ gem 'rails-controller-testing'
 
 gem 'webpacker'
 
+gem 'faker'
+
+gem 'will_paginate'
+
+gem 'bootstrap-will_paginate'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

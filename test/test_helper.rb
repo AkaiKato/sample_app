@@ -15,16 +15,8 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
-  def log_in_as(user, options = {})
-    password    = options[:password]    || 'password'
-    remember_me = options[:remember_me] || '1'
-    if integration_test?
-      post login_path, params:{session: { email:       user.email,
-                                  password:    password,
-                                  remember_me: remember_me }}
-    else
-      session[:user_id] = user.id
-    end
+  def log_in_as(user)
+    session[:user_id] = user.id
   end
 
   private
@@ -34,3 +26,12 @@ class ActiveSupport::TestCase
   end
   # Add more helper methods to be used by all tests here...
 end
+
+class ActionDispatch::IntegrationTest
+  def log_in_as(user, password: 'password', remember_me: '1')
+    post login_path, params: { session: { email: user.email,
+                                          password: password,
+                                          remember_me: remember_me } }
+  end
+end
+  
