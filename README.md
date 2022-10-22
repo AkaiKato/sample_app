@@ -17,3 +17,5 @@
 Лаба №8 находится в ветке log-in-log-out
 
 Лаба №9 находится в ветке updating-users
+
+Лаба №10 находится в ветке account-activation
